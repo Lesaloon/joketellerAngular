@@ -9,7 +9,7 @@ export class ApiService {
 
   // using the joke.dev API to get a random joke
   async getJoke() : Promise<any> {
-    return fetch('https://v2.jokeapi.dev/joke/any?lang=fr')
+    return fetch(' URL: https://v2.jokeapi.dev/joke/Any?lang=fr&blacklistFlags=nsfw,explicit')
       .then(response => response.json())
       .then(data => {
         return data;

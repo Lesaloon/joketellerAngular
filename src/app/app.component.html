@@ -5,8 +5,8 @@
 
   <div *ngIf="joke">
     <h2>{{joke.setup}}</h2>
-    <br>
-    <p>{{joke.delivery}}</p>
+    <button (click)="reveal = true">Afficher la réponce</button>
+    <p *ngIf="reveal">{{joke.delivery}}</p>
   </div>
 
 

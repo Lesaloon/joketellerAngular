@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private apiService: ApiService) { }
 
   joke: any;
-
+  reveal: boolean = false;
   ngOnInit() {
     this.getJoke();
   }
@@ -21,5 +21,6 @@ export class AppComponent {
   async getJoke() {
     const joke = await this.apiService.getJoke();
     this.joke = joke;
+    this.reveal = false;
   }
 }
