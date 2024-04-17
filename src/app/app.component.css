@@ -1,0 +1,23 @@
+/* app.component.css */
+
+/* Add your custom styles here */
+
+button {
+	padding: 10px 20px;
+	cursor: pointer;
+	width: 100px;
+}
+
+
+.response-container {
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background-color: #f5f5f5;
+}
+
+main {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
